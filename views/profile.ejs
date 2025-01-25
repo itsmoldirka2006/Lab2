@@ -1,0 +1,14 @@
+<%- include("header") -%>
+<h1>User Profile</h1>
+
+<form action="/update-profile" method="POST">
+  <label for="username">Username</label>
+  <input type="text" name="username" value="<%= user.username %>" required>
+  
+  <label for="password">New Password (Optional)</label>
+  <input type="password" name="password" placeholder="Enter new password if you want to change it">
+
+  <button type="submit">Update Profile</button>
+</form>
+
+<%- include("footer") -%>
